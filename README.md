@@ -1,11 +1,31 @@
 # TIGER-expression-data-conversion
-Created in order to convert TIGER expression data from txt to csv form for the Oncogenomics Lab
------------------------------------------------------------------------------------------------
-If you are starting from scratch:
-1) Take the download.py and parse_EST.py and put them into a desired directory.
-2) Open command line and cd to the folder that contains these files.
-3) First run "python download.py" in order to get tss_spf_rsc.txt file.
-4) Once you have the txt file you can now run "python parse_EST.py".
-5) Wait a little and now your csv file should be in the same directory.
+> Author: Darren Chang @ UCSD Oncogenomics Lab
 
-***The CSV file has already been generated so no need to download and run***
+This project takes data from http://bioinfo.wilmer.jhu.edu/tiger/download/tss_spf_rsc.txt and turns it into a CSV file.
+
+## Getting started
+> Instructions to run from scratch but the converted CSV file is already available to download
+
+Take the download.py and parse_EST.py and put them into your desired directory.
+
+## Run download.py
+
+Open a command line window and cd to the foplder that contains download.py and parse_EST.py. Once there run:
+
+```shell
+python download.py
+```
+This command will generate the tss_spf_rsc.txt file in your project directory.
+
+## Run parse_EST.py
+
+In the same directory run:
+
+```shell
+python parse_EST.py
+```
+This command will generate the tss_spf_rsc.csv file in your project directory.
+
+## Done!
+
+Now you should have the CSV file in your project directory ready to be used.
